@@ -1,0 +1,114 @@
+.navbar {
+  background-color: #1e1e2f;;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.company-logo {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.nav-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+  min-width: 250px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.login-btn {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #00C853;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #00b34a;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav-center {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .login-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .product-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

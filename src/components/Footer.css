@@ -1,0 +1,43 @@
+.footer {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00C853;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.footer-contact a {
+  color: #00C853;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .footer-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .footer-content p {
+    font-size: 0.95rem;
+  }
+}
